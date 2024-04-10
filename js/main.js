@@ -25,3 +25,19 @@ $.get('./json/main.json', (data)=>{
 
     $("#headLines").html(minEdu)
 })
+
+// mobile menu
+let nav_counter = 0
+$("#mobile_menu").on("click", ()=>{
+    nav_counter++
+    if (nav_counter == 1) {
+        $(".side_bar").css({"height":"100vh", "width":"100%", "position":"absolute"})
+        $(".side_bar span").show()
+        $("#nav").hide()
+    } else {
+        $(".side_bar").css({"height":"auto", "width":"20%", "position":"absolute"})
+        $(".side_bar span").hide()
+        $("#nav").show()
+        nav_counter = 0
+    }
+})
