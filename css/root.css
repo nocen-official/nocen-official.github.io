@@ -28,7 +28,6 @@ a{
 }
 
 /* sub page css */
-
 .sub_app_nav{
     display: flex;
     align-items: center;
@@ -54,4 +53,32 @@ a{
     font-weight: 500;
     font-size: 2rem;
     text-transform: uppercase;
+}
+
+/*  */
+@media (max-width:650px) {
+    .sub_app_nav{
+        padding: 0.1rem 0.5rem;
+        padding-top: 0.3rem;
+    }
+    
+    .sub_app_nav img{
+        width: 50px;
+    }
+    
+    .sub_app_nav h2{
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width:500px) {
+    .sub_app_nav img{
+        width: 40px;
+    }
+}
+
+@media (max-width:400px) {    
+    .sub_app_nav h2{
+        font-size: 1.3rem;
+    }
 }
