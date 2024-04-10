@@ -1,0 +1,243 @@
+main{
+    display: flex;
+    gap: 0.5rem;
+    width: 100%;
+    min-height: 100vh;
+    background-color: whitesmoke;
+    margin: 0.2rem 0rem;
+    padding: 1rem 0rem;
+    position: relative;
+}
+
+/* side bar */
+#mobile_menu{
+    display: none;
+}
+
+.side_bar{
+    width: 15%;
+    background-color: var(--main-color);
+}
+
+.side_bar ul{
+    list-style: none;
+    padding: 0rem 1rem;
+}
+
+.side_bar ul li{
+    background-color: var(--text-color1);
+    padding: 0.2rem 0.5rem;
+    margin: 0.5rem 0rem;
+    color: black;
+    font-weight: 500;
+    transform: scale(0.9);
+    font-weight: 500;
+    font-size: larger;
+}
+
+.side_bar ul li:hover{
+    transform: scale(1);
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.side_bar span h2{
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    border: 1px solid var(--primary-color);
+    border-width: 0px 0px 1px 0px;
+    margin-bottom: 2rem;
+}
+
+/* main bar */
+
+.main_bar{
+    width: 85%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
+    url(../icons/nocen_logo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+/*  */
+#headLines ul{
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 0rem 1rem;
+}
+
+#headLines ul li{
+    background-color: var(--text-color2);
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 0rem;
+    min-height: 5vh;
+    box-shadow: 0px 0px 3px black;
+}
+
+#headLines ul li h2{
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+#headLines ul li img{
+    display: block;
+    margin: 0 auto;
+    object-fit: contain;
+    padding: 0.5rem 1rem;
+}
+
+#headLines ul li:first-child{
+    width: 60%;
+}
+
+#headLines ul div{
+    width: 40%;
+}
+
+#headLines ul div li{
+    width: 100% !important;
+}
+
+#headLines ul div li h2{
+    font-size: smaller;
+}
+
+/* footer */
+#app_footer{
+    background-color: black;
+    color: var(--text-color1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: smaller;
+    padding: 0.2rem 0.7rem;
+}
+
+#app_footer section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+    gap: 1rem;
+}
+
+/*  */
+
+@media (max-width:1030px) {
+    #headLines ul{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+        padding: 0rem 3rem;
+    }
+
+    .side_bar{
+        width: 20%;
+    }
+
+    .main_bar{
+        width: 80%;
+    }
+
+    #headLines ul li:first-child{
+        width: 100%;
+    }
+    
+    #headLines ul div{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    #headLines ul div li{
+        width: 45% !important;
+    }
+
+    .side_bar ul li{
+        transform: scale(1);
+    }
+    
+    .side_bar ul li:hover{
+        transform: scale(1);
+        border-radius: 0px;
+    }
+}
+
+@media (max-width:900px) {
+    .side_bar{
+        width: 25%;
+    }
+
+    .main_bar{
+        width: 75%;
+    }
+
+    #headLines ul{
+        padding: 0rem 1rem;
+    }
+}
+
+@media (max-width:900px) {
+    .side_bar{
+        width: 28%;
+    }
+
+    .main_bar{
+        width: 72%;
+    }
+}
+
+@media (max-width:650px) {
+    #mobile_menu{
+        display: flex;
+        padding: 0px 5px;
+        top: 0;
+        font-size: large;
+        background-color: rgba(0, 0, 0, 0.8);
+        color: white;
+        position: fixed;
+        z-index: 20;
+    }
+
+    #mobile_menu:hover{
+        background-color: rgba(0, 0, 0, 1);
+    }
+
+    .side_bar{
+        width: 50%;
+        position: absolute;
+    }
+
+    .side_bar span{
+        display: none;
+    }
+
+    .main_bar{
+        width: 100%;
+    }
+}
+
+@media (max-width:500px) {
+    #headLines ul div li{
+        width: 80% !important;
+        margin: 0;
+    }
+
+    #headLines ul li h2{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:500px) {
+    #headLines ul div li{
+        width: 90% !important;
+    }
+}
