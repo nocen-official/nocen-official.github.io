@@ -1,3 +1,9 @@
+// end laoding effects
+$(document).ready(function () {
+    $("#pageLoader").hide()
+ })
+
+
 const date = new Date();
 
 $("#app_footer").html(`
