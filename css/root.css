@@ -63,11 +63,14 @@ a{
 .sub_app_nav{
     display: flex;
     align-items: center;
+    gap: 0.4rem;
     background-color: var(--main-color);
     padding: 0.3rem 0.5rem;
     color: var(--text-color2);
     position: sticky;
     top: 0;
+    z-index: 20;
+    box-shadow: 0px 0px 3px 1px var(--primary-color);
 }
 
 .sub_app_nav img{
@@ -79,12 +82,31 @@ a{
     border: 3px solid var(--primary-color);
 }
 
-.sub_app_nav h2{
+.sub_app_nav span{
     width: 100%;
     text-align: center;
-    font-weight: 500;
-    font-size: 2rem;
     text-transform: uppercase;
+}
+
+.sub_app_nav span h2{
+    border: 1px solid beige;
+    border-width: 0px 0px 1px 0px;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.sub_app_nav span h3{
+    font-size: 1.2rem;
+    color: var(--primary-color);
+}
+
+footer{
+    text-align: center;
+    font-size: smaller;
+    background-color: black;
+    color: beige;
+    padding: 0.5rem 0.2rem;
 }
 
 /*  */
@@ -94,6 +116,20 @@ a{
 }
 
 /*  */
+@media (max-width:1030px) {
+    .sub_app_nav img{
+        width: 80px;
+    }
+    
+    .sub_app_nav span h2{
+        font-size: 2.5rem;
+    }
+    
+    .sub_app_nav span h3{
+        font-size: 1.3rem;
+    }
+}
+
 @media (max-width:650px) {
     .sub_app_nav{
         padding: 0.1rem 0.5rem;
@@ -101,22 +137,43 @@ a{
     }
     
     .sub_app_nav img{
-        width: 50px;
+        width: 65px;
     }
     
-    .sub_app_nav h2{
-        font-size: 1.5rem;
+    .sub_app_nav span h2{
+        font-size: 2rem;
+        margin-bottom: 0.1rem;
+    }
+    
+    .sub_app_nav span h3{
+        font-size: 1.2rem;
     }
 }
 
 @media (max-width:500px) {
     .sub_app_nav img{
-        width: 40px;
+        width: 55px;
+    }
+    
+    .sub_app_nav span h2{
+        font-size: 1.5rem;
+    }
+    
+    .sub_app_nav span h3{
+        font-size: 1rem;
     }
 }
 
 @media (max-width:400px) {    
-    .sub_app_nav h2{
+    .sub_app_nav img{
+        width: 50px;
+    }
+    
+    .sub_app_nav span h2{
         font-size: 1.3rem;
+    }
+    
+    .sub_app_nav span h3{
+        font-size: 0.9rem;
     }
 }
