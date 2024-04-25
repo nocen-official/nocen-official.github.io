@@ -1,23 +1,26 @@
 $.get('./json/main.json', (data)=>{
     let minEdu = `
+    <h1>Top Headlines:</h1>
     <ul>
-    <li>
-        <a href="./${data.updates[0].link}">
-        <h2>${data.updates[0].topic}</h2>
-        <img src="./icons/${data.updates[0].image}" alt="Hello"/>
-        </a>
+    <li id="headline_list_first_child">
+    <a href="./${data.events[0].link}">
+    <img class="headline_img" src="./gallery/${data.events[0].image}" alt="photo"/>
+    <h2>${data.events[0].topic}</h2>
+    </a>
     </li>
 
     <div>
     <li>
-    <a href="./${data.updates[0].link}">
-    <h2>${data.updates[0].topic}</h2>
-    </a>
+        <a href="./${data.updates[0].link}">
+        <img class="headline_sub_img" src="./icons/${data.updates[0].image}" alt="photo"/>
+        <h2>${data.updates[0].topic}</h2>
+        </a>
     </li>
 
     <li></li>
     <li></li>
     <li></li>
+
     </div>
 
     </ul>
