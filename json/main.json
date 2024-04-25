@@ -7,5 +7,14 @@
         "image":"Coat_of_arms.png",
         "category":"updates"
     }],
+    "events":[
+        {
+        "id":1,
+        "topic":"The Dean, Faculty of Education (UNN); leads Delegates to the Provost's Office.",
+        "link":"pages/events/unn_deligates.html",
+        "image":"unn_deligate.png",
+        "category":"events"
+        }
+    ],
     "social":[]
 }
