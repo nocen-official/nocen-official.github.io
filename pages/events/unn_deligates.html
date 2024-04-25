@@ -96,7 +96,7 @@
     .gallary_container aside p{
         width: 40%;
         font-size: larger;
-        text-align: justify;
+        text-align: left;
     }
 
     .gallary_container aside p::first-letter{
@@ -372,6 +372,16 @@
     .gallary_container aside section{
         margin: 0rem;
     }
+
+    .gallary_container aside section h2{
+        font-weight: 500;
+        font-size: 1.1rem;
+    }
+
+    .dot {
+        height: 10px;
+        width: 10px;
+    }
 }
 
 @media (max-width:400px) {
@@ -388,16 +398,33 @@
         font-size: 1rem;
     } 
 
+    .photo_talks_brief{
+        font-size: 0.5rem !important;
+    }
+
     .gallary_container aside{
         gap: 1rem;
     }
 
     .gallary_container aside p{
-        font-size: 1rem;
+        font-size: smaller;
     }
 
     .gallary_container p{
-        font-size: smaller;
+        font-size: 0.7rem;
+    }
+
+    .photo_talks p span b{
+        width: 20%;
+    }
+
+    .photo_talks p span i{
+        width: 80%;
+    } 
+
+    .dot {
+        height: 5px;
+        width: 5px;
     }
 }
 
